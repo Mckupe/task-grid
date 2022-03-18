@@ -4,3 +4,39 @@ body,
     height: 100%;
     margin: 0;
 }
+
+.grid-container {
+    display: grid;
+    width: 700px;
+    height: 400px;
+    grid-template: 1fr 20px 200px 20px 1fr / 1fr 20px 1fr;
+}
+
+div {
+    background-color: #daa520;
+}
+
+div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+div:nth-child(4) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+div:nth-child(5) {
+    grid-column: 1;
+    grid-row: 5;
+}
